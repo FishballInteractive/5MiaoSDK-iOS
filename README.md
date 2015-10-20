@@ -6,7 +6,7 @@
 
 #### 2. 接入指南
 ##### 2.1. 导入5秒轻游戏SDK静态库
-  * 下载[5MiaoSDK静态库][static-lib];
+  * 下载[5MiaoSDK framework][sdk-framework];
   * 在Xcode中引入静态库，同时需要引入CoreTelephony.framework
 
 ##### 2.2. SDK初始化
@@ -28,7 +28,7 @@
 
 ##### 2.3. WebView载入“5秒轻游戏”网站
 
-* 载入网站
+* 载入网站：5秒轻游戏主站
 
 ```objective-c
 
@@ -81,6 +81,17 @@
 
 ```
 
+* 载入网站：5秒轻游戏特定页面
+
+某些情况，比如合作商开展某些运营活动，需要直接进入5秒轻游戏的某个游戏，则可调用以下接口
+
+````objective-c
+
+// url为特定页面的地址，webView、thirdParty同上
+[WMS5MiaoSDK loadSite:webView withUrl:url withThirdParty:thirdParty];
+
+```
+
 * 退出网站
 
 ```objective-c
@@ -103,4 +114,4 @@
 ```
 
 [quick-import]: README/quick-import.png "快速接入"
-[static-lib]: https://github.com/FishballInteractive/5MiaoSDK-iOS/tree/master/lib/
+[sdk-framework]: https://github.com/FishballInteractive/5MiaoSDK-iOS/tree/master/lib/

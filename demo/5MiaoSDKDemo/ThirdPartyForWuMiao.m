@@ -49,7 +49,8 @@ static NSString *const kKeyAvator = @"avator";
 
 - (BOOL)share:(NSDictionary *)shareInfo {
     ShareViewController *shareViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"shareView"];
-    shareViewController.shareContent = [NSString stringWithFormat:@"%@", shareInfo];
+//    shareViewController.shareContent = [[NSString stringWithFormat:@"%@", shareInfo] stringByRemovingPercentEncoding];
+    shareViewController.shareInfo = shareInfo;
     [_controller.navigationController pushViewController:shareViewController animated:YES];
     return YES;
 }

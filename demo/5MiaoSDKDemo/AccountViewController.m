@@ -6,8 +6,9 @@
 //  Copyright © 2015 5miao. All rights reserved.
 //
 
+#import <WMS5MiaoSDK/WMS5MiaoSDK.h>
+
 #import "AccountViewController.h"
-#import "WMS5MiaoSDK.h"
 
 static NSString *const kKeyUserDefaults = @"5MiaoDemo.UserDefaults";
 static NSString *const kKeyUid    = @"uid";

@@ -12,4 +12,6 @@
 
 @property NSString *shareContent;
 
+@property NSDictionary *shareInfo;
+
 @end

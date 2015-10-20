@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"分享";
-    self.shareContentTextView.text = self.shareContent;
+    self.shareContentTextView.text = [NSString stringWithFormat:@"标题：%@\n内容：%@\n图片地址：%@\n页面地址：%@", self.shareInfo[@"title"], self.shareInfo[@"content"], self.shareInfo[@"image_url"], self.shareInfo[@"page_url"]];
 }
 
 @end

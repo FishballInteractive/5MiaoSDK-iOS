@@ -16,8 +16,8 @@
 		3F2A8BE01BB1A49700B88DB0 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F2A8BDF1BB1A49700B88DB0 /* WebViewController.m */; settings = {ASSET_TAGS = (); }; };
 		3F2A8BE31BB1A4B800B88DB0 /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F2A8BE21BB1A4B800B88DB0 /* AccountViewController.m */; settings = {ASSET_TAGS = (); }; };
 		3F2A8BF11BB2261100B88DB0 /* ThirdPartyForWuMiao.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F2A8BF01BB2261100B88DB0 /* ThirdPartyForWuMiao.m */; settings = {ASSET_TAGS = (); }; };
+		3F30BA261BD5E8F9007F7DDB /* WMS5MiaoSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F30BA251BD5E8F9007F7DDB /* WMS5MiaoSDK.framework */; settings = {ASSET_TAGS = (); ATTRIBUTES = (Required, ); }; };
 		3FA6CD481BB8C0C000CE20DF /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA6CD471BB8C0C000CE20DF /* ShareViewController.m */; settings = {ASSET_TAGS = (); }; };
-		3FA6CD621BB92ABA00CE20DF /* lib5MiaoSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FA6CD611BB92ABA00CE20DF /* lib5MiaoSDK.a */; };
 		3FA6CD671BB92CD700CE20DF /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FA6CD661BB92CD700CE20DF /* CoreTelephony.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,11 +38,9 @@
 		3F2A8BE21BB1A4B800B88DB0 /* AccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountViewController.m; sourceTree = "<group>"; };
 		3F2A8BEF1BB2261100B88DB0 /* ThirdPartyForWuMiao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdPartyForWuMiao.h; sourceTree = "<group>"; };
 		3F2A8BF01BB2261100B88DB0 /* ThirdPartyForWuMiao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdPartyForWuMiao.m; sourceTree = "<group>"; };
+		3F30BA251BD5E8F9007F7DDB /* WMS5MiaoSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WMS5MiaoSDK.framework; sourceTree = "<group>"; };
 		3FA6CD461BB8C0C000CE20DF /* ShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
 		3FA6CD471BB8C0C000CE20DF /* ShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
-		3FA6CD611BB92ABA00CE20DF /* lib5MiaoSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = lib5MiaoSDK.a; path = 5MiaoSDKDemo/libs/lib5MiaoSDK.a; sourceTree = "<group>"; };
-		3FA6CD641BB92B0A00CE20DF /* WMS5MiaoSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WMS5MiaoSDK.h; path = libs/WMS5MiaoSDK.h; sourceTree = "<group>"; };
-		3FA6CD651BB92B4800CE20DF /* WMSThirdParty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WMSThirdParty.h; path = libs/WMSThirdParty.h; sourceTree = "<group>"; };
 		3FA6CD661BB92CD700CE20DF /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -52,7 +50,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FA6CD671BB92CD700CE20DF /* CoreTelephony.framework in Frameworks */,
-				3FA6CD621BB92ABA00CE20DF /* lib5MiaoSDK.a in Frameworks */,
+				3F30BA261BD5E8F9007F7DDB /* WMS5MiaoSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,7 +61,6 @@
 			isa = PBXGroup;
 			children = (
 				3FA6CD661BB92CD700CE20DF /* CoreTelephony.framework */,
-				3FA6CD611BB92ABA00CE20DF /* lib5MiaoSDK.a */,
 				3F2A8BC61BB19D7C00B88DB0 /* 5MiaoSDKDemo */,
 				3F2A8BC51BB19D7C00B88DB0 /* Products */,
 			);
@@ -80,7 +77,7 @@
 		3F2A8BC61BB19D7C00B88DB0 /* 5MiaoSDKDemo */ = {
 			isa = PBXGroup;
 			children = (
-				3FA6CD631BB92AC900CE20DF /* libs */,
+				3F30BA241BD5E8F9007F7DDB /* sdk */,
 				3F2A8BCA1BB19D7C00B88DB0 /* AppDelegate.h */,
 				3F2A8BCB1BB19D7C00B88DB0 /* AppDelegate.m */,
 				3F2A8BCD1BB19D7C00B88DB0 /* MainViewController.h */,
@@ -110,13 +107,12 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		3FA6CD631BB92AC900CE20DF /* libs */ = {
+		3F30BA241BD5E8F9007F7DDB /* sdk */ = {
 			isa = PBXGroup;
 			children = (
-				3FA6CD651BB92B4800CE20DF /* WMSThirdParty.h */,
-				3FA6CD641BB92B0A00CE20DF /* WMS5MiaoSDK.h */,
+				3F30BA251BD5E8F9007F7DDB /* WMS5MiaoSDK.framework */,
 			);
-			name = libs;
+			path = sdk;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,14 +304,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/5MiaoSDKDemo/sdk",
+				);
 				INFOPLIST_FILE = 5MiaoSDKDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/5MiaoSDKDemo",
-					"$(PROJECT_DIR)/5MiaoSDKDemo/libs",
-				);
 				OTHER_CFLAGS = "-Wall";
 				PRODUCT_BUNDLE_IDENTIFIER = com.5miao.WuMiaoSDKDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -329,14 +324,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/5MiaoSDKDemo/sdk",
+				);
 				INFOPLIST_FILE = 5MiaoSDKDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/5MiaoSDKDemo",
-					"$(PROJECT_DIR)/5MiaoSDKDemo/libs",
-				);
 				OTHER_CFLAGS = "-Wall";
 				PRODUCT_BUNDLE_IDENTIFIER = com.5miao.WuMiaoSDKDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

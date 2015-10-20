@@ -24,6 +24,10 @@ typedef NS_ENUM(NSUInteger, WMSLoginResult) {
             andChannel:(NSString *)channel;
 
 + (void)loadSite:(UIWebView *)webView
+         withUrl:(NSString *)url
+  withThirdParty:(id<WMSThirdParty>)thirdParty;
+
++ (void)loadSite:(UIWebView *)webView
   withThirdParty:(id<WMSThirdParty>)thirdParty;
 
 + (void)unloadSite;

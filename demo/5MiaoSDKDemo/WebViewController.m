@@ -6,9 +6,10 @@
 //  Copyright © 2015 5miao. All rights reserved.
 //
 
+#import <WMS5MiaoSDK/WMS5MiaoSDK.h>
+
 #import "WebViewController.h"
 #import "ThirdPartyForWuMiao.h"
-#import "WMS5MiaoSDK.h"
 
 @interface WebViewController ()
 

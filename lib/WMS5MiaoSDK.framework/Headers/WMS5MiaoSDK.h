@@ -11,17 +11,21 @@
 
 #import "WMSThirdParty.h"
 
-typedef enum : NSInteger {
+typedef NS_ENUM(NSUInteger, WMSLoginResult) {
     WMSLoginSuccess   = 1 << 0,
     WMSLoginFailure   = 1 << 1,
     WMSLoginCancelled = 1 << 2
-} WMSLoginResult;
+};
 
 @interface WMS5MiaoSDK : NSObject
 
 + (void)startWithAppId:(NSString *)appId
              andAppKey:(NSString *)appKey
             andChannel:(NSString *)channel;
+
++ (void)loadSite:(UIWebView *)webView
+         withUrl:(NSString *)url
+  withThirdParty:(id<WMSThirdParty>)thirdParty;
 
 + (void)loadSite:(UIWebView *)webView
   withThirdParty:(id<WMSThirdParty>)thirdParty;

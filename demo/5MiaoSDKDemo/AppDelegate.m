@@ -6,8 +6,9 @@
 //  Copyright © 2015 5miao. All rights reserved.
 //
 
+#import <WMS5MiaoSDK/WMS5MiaoSDK.h>
+
 #import "AppDelegate.h"
-#import "WMS5MiaoSDK.h"
 #import "ThirdPartyForWuMiao.h"
 
 @interface AppDelegate ()

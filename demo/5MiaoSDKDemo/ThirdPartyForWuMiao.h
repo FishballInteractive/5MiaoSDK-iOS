@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <WMS5MiaoSDK/WMSThirdParty.h>
 
-#import "WMS5MiaoSDK.h"
 #import "WebViewController.h"
 
 @interface ThirdPartyForWuMiao : WMSDefaultThirdParty
