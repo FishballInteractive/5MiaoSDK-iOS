@@ -20,9 +20,9 @@
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [WMS5MiaoSDK startWithAppId:@"10000066"
-                      andAppKey:@"984751bdb0f7f48d391b01a36bcbcbeb"
-                     andChannel:@"yuwan01"];
+    [WMS5MiaoSDK startWithAppId:@"10000123"
+                      andAppKey:@"9dc3cd7420baf4251823421ca1f0d163"
+                     andChannel:@"demo01"];
 
     return YES;
 }
